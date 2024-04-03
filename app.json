@@ -4,7 +4,7 @@
   "keywords": [
     "bot",
     "whatsapp",
-    "dreaded",
+    "Charles",
     "whatsapp-stickers",
     "anime",
     "whatsapp-bot",
@@ -16,7 +16,6 @@
   ],
   "website": "https://github.com/Fortunatusmokaya/DREADED-GPT-AI#readme",
   "repository": "https://github.com/Fortunatusmokaya/DREADED-GPT-AI.git",
-  "logo": "https://telegra.ph/file/d6dab955fbaa42fce2280.jpg",
   "success_url": "/",
   "env": {
        "PREFIX":
