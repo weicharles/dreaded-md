@@ -20,6 +20,7 @@ import util from "util";
 import { Bard } from "googlebard"; 
 import axios from "axios";
 import chalk from "chalk";
+import {RaxderunofficialAi} from "https://ogegadavis254-raxder-roasting-model.hf.space/";
 import { bardAI, bardAsk } from 'g-bardai';
 import speed from "performance-now";
 import Genius from "genius-lyrics";
@@ -28,7 +29,6 @@ import { readFileSync } from 'fs';
 const kali = readFileSync('./dreaded.jpg'); // Using readFileSync directly
 import { Client } from "genius-lyrics"; 
 import { isUrl, processTime } from "./lib/dreadfunc.js";
-import { TelegraPh, UploadFileUgu } from './lib/dreadupload.js';
 import { smsg, formatp, tanggal, formatDate, getTime, sleep, clockString, fetchJson, getBuffer, jsonformat, generateProfilePicture, parseMention, getRandom, MediaFire } from './lib/dreadfunc.js';
 import { exec, spawn, execSync } from "child_process";
 import Heroku from "heroku-client";
@@ -96,30 +96,30 @@ for (const categor of commandCategories) {
    // do not leave the prefix string empty
 const video = await fs.readFileSync('./menu.mp4');
 const pict = await fs.readFileSync('./dreaded.jpg');
-const mode = process.env.MODE || 'PUBLIC';
+const mode = process.env.MODE || 'PRIVATE';
 const author = process.env.STICKER_AUTHOR || 'fortunatus';
     const prefix = process.env.PREFIX || '.';
 const mycode = process.env.COUNTRY_CODE || '254';
     const cmd = commandNam.some(name => body.includes(name)) && body.startsWith(prefix);
-const admin = process.env.ADMIN_MSG || 'Are you an admin?';
-    const group = process.env.GROUP_ONLY_MSG || 'This a not a group chat';
-    const botAdmin = process.env.BOT_ADMIN_MSG || 'Am I an admin?'
-    const NotOwner = process.env.NOT_OWNER_MSG || 'Are you the owner?';
+const admin = process.env.ADMIN_MSG || 'tulia wewe sio Admin fala🥹';
+    const group = process.env.GROUP_ONLY_MSG || 'Acha ujinga hii message ni ya group 😂';
+    const botAdmin = process.env.BOT_ADMIN_MSG || 'tulia wewe sio Admin fala🥹'
+    const NotOwner = process.env.NOT_OWNER_MSG || 'tulia wewe sio Admin fala🥹';
 const appname = process.env.APP_NAME;
 const herokuapi = process.env.HEROKU_API;
-    const packname = process.env.STICKER_PACKNAME || 'dreaded';
+    const packname = process.env.STICKER_PACKNAME || '😑';
 const dev = process.env.DEV || '254114018035'
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
    const bad = process.env.BAD_WORD || 'fuck';
-const botname = process.env.BOTNAME || "DREADED-MD";
+const botname = process.env.BOTNAME || "Charles";
 
-    const autorecordtypegc = process.env.RECORDING_TYPINGGC || 'TRUE';
+    const autorecordtypegc = process.env.RECORDING_TYPINGGC || 'FALSE';
     const autoreaddm = process.env.AUTOREAD || 'TRUE';
 const antibot = process.env.ANTIBOT || 'FALSE';
 const antitag = process.env.ANTITAG || 'FALSE';
 const antilink = process.env.ANTILINK || 'TRUE';
-    const badword = bad.split(",");
+    const badword = bad.split("dm,fuck,online business,work online,data free");
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
     const args = body.trim().split(/ +/).slice(1);
@@ -152,7 +152,7 @@ const isBaileys = mek.key.id.startsWith("BAE5") && mek.key.id.length === 16;
 
 const reactionMessage = {
     react: {
-        text: "❌", 
+        text: "😵", 
         key: m.key
     }
 }
@@ -188,8 +188,8 @@ const audiovn = "./alive.mp3";
         contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
-          title: "Hi human, I am Alive",
-          body: "DREADED BOT",
+          title: "Tulia nikupange 😏",
+          body: "Charles",
           thumbnailUrl: "https://telegra.ph/file/a5147a64a5b91d8cf945c.jpg",
           sourceUrl: '',
           mediaType: 1,
@@ -419,14 +419,14 @@ var _0x3c1bf5 = _0x4db3;
     }
 }(_0x1718, 0x1 * 0x102989 + 0x198cd * 0x1 + 0x2acc1 * -0x1));
 if (cmd && m[_0x3c1bf5(0x181)] == _0x3c1bf5(0x180) + _0x3c1bf5(0x175) + _0x3c1bf5(0x17f) && !dreadedOwner) {
-    await sendReact('🗿');
+    await sendReact('💀');
     return;
 }
 // bot must have prefix 
 
 if (prefix == '' && commandNam.some(name => body.substring(prefix.length).startsWith(name))) {
 
-await sendReact("❌");
+await sendReact("✌️");
 await m.reply(`You are trying to use ${text} command, set up a prefix for your bot before using commands`);
 return;
 
@@ -434,7 +434,7 @@ return;
 
 
 if (body.startsWith(prefix) && !commandNam.some(name => body.substring(prefix.length).startsWith(name))) {
-    await sendReact("❌");
+    await sendReact("😂");
     await m.reply(`Wrong command, Type ${prefix}menu to see the help list eh?`);
     return;
 }
@@ -442,7 +442,7 @@ if (body.startsWith(prefix) && !commandNam.some(name => body.substring(prefix.le
 
 
 /* if (body.startsWith(prefix) && !commandNam.some(name => body.substring(prefix.length).startsWith(name))) {
-    await sendReact("❌");
+    await sendReact("🌞");
     await m.reply(`Wrong command, Type ${prefix}menu to see the help list eh?`);
     return;
 }
@@ -456,7 +456,7 @@ if (body.startsWith(prefix) && !commandNam.some(name => body.substring(prefix.le
         }
     }
     if (invalidCommand) {
-        await sendReact("❌");
+        await sendReact("🚮");
         await m.reply(`Wrong command. Type ${prefix}menu to see the help list.`);
         return;
     }
@@ -471,7 +471,7 @@ const Blocked = await client.fetchBlocklist();
 
 if (m.isGroup && cmd && Blocked.includes(sender)) {
     await reply("You are blocked from using bot commands. You might want to contact the owner to be unblocked.");
-    await sendReact("❌");
+    await sendReact("😹");
     return; 
 }
 
@@ -566,7 +566,7 @@ await client.updateBlockStatus(sender, 'block');
 
 if (cmd && !m.isGroup) {
 
-await sendReact("✅")
+await sendReact("🫥")
 
 }
 
